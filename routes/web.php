@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::get('/home', function () {
+    return view('home');
+});
+
+
+Route::get('/csgo', function () {
+    return view('csgo');
+});
+
+Route::get('/valorant', function () {
+    return view('valorant');
+});
+
+Route::get('/minecraft', function () {
+    return view('minecraft');
 });
