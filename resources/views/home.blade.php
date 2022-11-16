@@ -58,8 +58,8 @@ img:hover {
 </head>
 <body>
 <div class="texttop">
-    <b><h1> Spēļu Komūna Latvijā</h1></b>
-    <b><p> Spēļu jaunumi un e-sports latviešu valodā. </p></b>
+    <b><h1> Gaming Community</h1></b>
+    <b><p> Game Updates and E-sport.</p></b>
 </div>
     <div class="container">
         <div class="main">

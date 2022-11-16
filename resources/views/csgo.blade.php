@@ -16,7 +16,7 @@
  background-size: 100%
 
 }   
-    .csgotext {
+    .text {
         color:white;
         text-align:center;
     }
@@ -33,28 +33,30 @@
         justify-content:center;
     }
 
-
+    .button{
+        text-align:center;
+    }
 
 </style>
 <body>
     <div class="container">
-    <div class="csgotext">
+    <div class="text">
         <div class="title">
-    <h1>Informācija par CS:GO</h1>
+    <h1>Information about CS:GO</h1>
         </div>
-    <p>Counter-Strike: Global Offensive (CS: GO) ir 2012. gadā izdotā pirmās personas šaušanas spēle,</p>
-    <p> ko izstrādājis “Valve” un “Hidden Path Entertainment”. Tā ir ceturtā spēle “Counter-Strike” sērijā.</p>
-        <p>Izstrādāta vairāk nekā divus gadus, 2012. gada augustā šī spēle tika izlaista OS X, PlayStation 3,</p>
-            <p> Windows un Xbox 360, bet 2014. gadā – Linux. Spēles izveidotāji joprojām regulāri atjaunina spēli gan ar mazākiem balansēšanas atjauninājumiem, </p>
-                <p> gan lielākiem satura papildinājumiem.</p>
+    <p>Counter-Strike: Global Offensive (CS:GO) is a 2012 multiplayer tactical first-person shooter developed by Valve and Hidden Path Entertainment.</p>
+        <p> It is the fourth game in the Counter-Strike series. Developed for over two years,</p>
+         <p> Global Offensive was released for OS X, PlayStation 3, Windows, and Xbox 360 in August 2012, and for Linux in 2014.</p>
+         <p>  Valve still regularly updates the game, both with smaller balancing patches and larger content additions.</p>
 
-                <p>Spēle iedala spēlētājus divās komandās - teroristos un pretteroristos - savā starpā dažādos spēles režīmos. </p>
-                    <p>Izplatītākie spēļu režīmi ir saistīti ar to, ka teroristi stāda bumbu, kamēr pretteroristi mēģina tos apturēt,</p>
-                        <p>vai ar to, ka pretteroristi mēģina glābt ķīlniekus, kurus teroristi ir sagūstījuši. Ir deviņi oficiālie spēļu režīmi,</p>
-                            <p> kuriem visiem ir atšķirīgas īpašības, kas raksturīgas šim režīmam. Spēlei ir arī partneru meklēšanas atbalsts, </p>
-                                <p>kas ļauj spēlētājiem spēlēt īpašos serveros.</p>
-                                    <p>2018. gada nogalē tika ieviests “Battle-Royale” spēles režīms “bīstamā zona”.</p>
+       <p> The game pits two teams, Terrorists and Counter-Terrorists, against each other in different objective-based game modes.</p>
+       <p>  The most common game modes involve the Terrorists planting a bomb while Counter-Terrorists attempt to stop them,</p>
+       <p>   or Counter-Terrorists attempting to rescue hostages that the Terrorists have captured. </p>
+       <p>   There are nine official game modes, all of which have distinct characteristics specific to that mode.</p>
+       <p>    The game also has matchmaking support that allows players to play on dedicated Valve servers, </p>
+       <p> in addition to community-hosted servers with custom maps and game modes. A battle-royale game-mode, "Danger Zone", was introduced in late 2018.</p>
     </div>
 </div>
+<a href="https://store.steampowered.com/about/"><button>Download Now</button></a>
 </body>
 </html>
