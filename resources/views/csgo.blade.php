@@ -57,6 +57,7 @@
        <p> in addition to community-hosted servers with custom maps and game modes. A battle-royale game-mode, "Danger Zone", was introduced in late 2018.</p>
     </div>
 </div>
-<a href="https://store.steampowered.com/about/"><button>Download Now</button></a>
+
+@include("layouts.footer")
 </body>
 </html>

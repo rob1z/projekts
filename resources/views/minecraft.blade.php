@@ -53,5 +53,6 @@
                 
 </div>
 </div>
+@include("layouts.html")
 </body>
 </html>
