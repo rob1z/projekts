@@ -43,7 +43,7 @@
   body {
     font: 16px / 24px "Rubik", sans-serif;
     color: var(--black);
-    background: var(--platinum);
+    background: url("data:image/jpeg;base64,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");
     max-width:100%;
   }
   
@@ -77,7 +77,7 @@
   
   
   .card:hover {
-    color: var(--black);
+    color: var(--white);
     background: var(--grey);
   }
   
@@ -130,6 +130,13 @@
   .cards::-webkit-scrollbar-track {
     background: var(--thumb);
     
+  }
+
+  .modal-body{
+    color:Black;
+  }
+  .modal-header{
+    color:black;
   }
   
   
@@ -200,6 +207,8 @@
         </div>
       </div>
       <!--modal-->
+    </div>
+  </div>
       <div class="card-link-wrapper">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -236,8 +245,8 @@
       </div>
       <div class="card-link-wrapper">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
-        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="new" aria-hidden="true">
-            <div class="modal-content">
+        <div class="modal fade" id="new" tabindex="-1" aria-labelledby="new" aria-hidden="true">
+            <div class="modal-body">
               <div class="modal-header">
               
                 <h1 class="modal-title fs-5" id="new">Abilities test</h1>
@@ -477,7 +486,8 @@
 </body>
 </html>
 <script>
-
   
-
+$(document).on('click', function()  {
+    $("#exampleModal").modal("new");
+});
 </script>
