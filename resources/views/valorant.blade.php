@@ -210,8 +210,8 @@
     </div>
   </div>
       <div class="card-link-wrapper">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#benson">Learn More</button>
+        <div class="modal fade" id="benson" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -244,8 +244,8 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn More</button>
-        <div class="modal fade" id="new" tabindex="-1" aria-labelledby="new" aria-hidden="true">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lewis">Learn More</button>
+        <div class="modal fade" id="lewis" tabindex="-1" aria-labelledby="new" aria-hidden="true">
             <div class="modal-body">
               <div class="modal-header">
               
@@ -487,7 +487,4 @@
 </html>
 <script>
   
-$(document).on('click', function()  {
-    $("#exampleModal").modal("new");
-});
 </script>

@@ -53,6 +53,6 @@
                 
 </div>
 </div>
-@include("layouts.html")
 </body>
 </html>
+@include("layouts.footer")
