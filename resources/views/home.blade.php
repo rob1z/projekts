@@ -8,13 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Document</title>
-    <div class="imgbackground">
+    <div class="imgbackground"> 
     <style>
         body {
- background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5L9Q0nbikdWPE4Ltaqpxmv8uQwCoHInUWg&usqp=CAU");
- background-color: #cccccc;
- background-repeat: no-repeat;
- background-size: 100%
+            background-image: linear-gradient(to bottom, black , rgba(35, 7, 172, 0.8), black);
 
 }
         .main{

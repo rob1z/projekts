@@ -20,7 +20,7 @@
 }
     .horizontal_line {
   border-top: 1px dotted grey;
-  width:1000px;
+  width:100%;
 }
 </style>
 <body>
@@ -128,7 +128,7 @@ Anubis<br>
 -Fixed boost near canal.<br>
 -Added collision to large stone blocks above canal.<br>
 
-<div class="horizontal_line"></div>
+
 </body>
 </html>
 
