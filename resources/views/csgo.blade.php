@@ -1,4 +1,4 @@
-@include('layouts.main')
+@include('layouts.csheader')
 
 <!DOCTYPE html>
 <html lang="en">

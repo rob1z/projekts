@@ -1,4 +1,3 @@
-@include('layouts.main')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -182,7 +181,9 @@
     height:150px;
   }
 </style>
+@include('layouts.valoheader')
 <body>
+
   <div class="container">
     <div class="text">
       <div class="title">

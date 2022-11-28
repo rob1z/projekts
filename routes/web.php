@@ -34,3 +34,11 @@ Route::get('/valorant', function () {
 Route::get('/minecraft', function () {
     return view('minecraft');
 });
+
+Route::get('/cspatch', function () {
+    return view('/patch/cspatch');
+});
+
+Route::get('/valopatch', function () {
+    return view('/patch/valopatch');
+});
