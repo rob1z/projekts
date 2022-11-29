@@ -42,3 +42,7 @@ Route::get('/cspatch', function () {
 Route::get('/valopatch', function () {
     return view('/patch/valopatch');
 });
+Route::get('/apitest', function () {
+    return view('apitest');
+});
+

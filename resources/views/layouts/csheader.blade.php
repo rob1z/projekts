@@ -16,7 +16,7 @@
           <a class="nav-link" href="/cspatch">Patch notes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Clips</a>
+          <a class="nav-link" href="apitest">Clips</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">E-Sport</a>
