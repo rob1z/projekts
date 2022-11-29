@@ -138,6 +138,9 @@
     color:black;
   }
   
+  button{
+    margin-top:75px;
+  }
   
   
   @media (min-width: 700px) {
@@ -210,9 +213,10 @@
       <!--modal-->
     </div>
   </div>
+    <div>
       <div class="card-link-wrapper">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#benson">Learn More</button>
-        <div class="modal fade" id="benson" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#astra" style="margin-top:75px;">Learn More</button>
+        <div class="modal fade" id="astra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
@@ -220,15 +224,15 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p> Q - Nova pulse (Place Stars in Astral form. ACTIVATE a Star to detonate a Nova Pulse)</p>
-                <p> E - Nebula (Place Stars in Astral form. ACTIVATE a star to transform it into a Nebula (smoke))</p>
-                <p> C - Gravity Well (Place Stars in Astral form. ACTIVATE a Star to form Gravity Well.)
-                
-                <p> X - ASTRAL FORM / COSMIC DIVIDE (Stars can be reactivated later, transforming them into a Nova Pulse, Nebula, or Gravity Well.use SECONDARY FIRE in Astral Form to begin aiming it, then PRIMARY FIRE to select two locations to build a wall.)
+                <p> Q - Nova pulse (Stuns Enemy)</p>
+                <p> E - Nebula (Smoke)</p>
+                <p> C - Gravity Well (Pulles in)</p>
+                <p> X - ASTRAL FORM / COSMIC DIVIDE (Special form/Big Wall)</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
+</div>
             </div>
           </div>
         </div>
@@ -241,24 +245,30 @@
         <h3 class="card-title">Breach</h3>
         <img src="data:image/jpeg;base64,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">
         <div class="card-content">
-          <p>Breach, the bionic Swede, fires powerful, targeted kinetic blasts to aggressively clear a path through enemy ground.</p>
+          <p>Breach, the bionic Swede, fires powerful,  targeted kinetic blasts to aggressively clear a path through enemy ground.</p>
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lewis">Learn More</button>
-        <div class="modal fade" id="lewis" tabindex="-1" aria-labelledby="new" aria-hidden="true">
-            <div class="modal-body">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Breach">Learn More</button>
+        <div class="modal fade" id="Breach" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
               <div class="modal-header">
-              
-                <h1 class="modal-title fs-5" id="new">Abilities test</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                  <p> </p>
+                <p> Q - Flashpoint (Blinds Enemy)</p>
+                <p> E - Fault line (Stuns Enemy)</p>
+                <p> C - Aftershock (Fusion charge trough the wall)</p>
+                
+                <p> X - Rolling Thunder (Seismic charge, stuns enemy)
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
+</div>
+            </div>
             </div>
         </div>
         
@@ -273,7 +283,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Brim">Learn More</button>
+        <div class="modal fade" id="Brim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Incendiary (Fire Grenade)</p>
+                <p> E - Sky Smoke (Smoke)</p>
+                <p> C - Stim Beacon (Rapid Fire)</p>
+                
+                <p> X - Orbital Strike (Lingering orbital strike laser)</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -285,7 +317,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Chamb">Learn More</button>
+        <div class="modal fade" id="Chamb" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Headhunter (Alt Fire)</p>
+                <p> E - Rendezvous (Teleport between two cards)</p>
+                <p> C - Trademark (Trap)</p>
+                
+                <p> X - Tour De Force (Powerful sniper)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -297,7 +351,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Cypher">Learn More</button>
+        <div class="modal fade" id="Cypher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Cyber Cage (Smoke)</p>
+                <p> E - Spycam (Vision)</p>
+                <p> C - Trapwire (Trap)</p>
+                
+                <p> X - Neural Teft (Use on dead enemy to reveal remaining enemies)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -310,7 +386,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Cypher">Learn More</button>
+        <div class="modal fade" id="Cypher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Seize (Explods and creates a cage zone)</p>
+                <p> E - Haunt (Vision)</p>
+                <p> C - Powler (Follows enemy and nearsights)</p>
+                
+                <p> X - Nightfall (Wave of nightmare energy that creates a trail of enemy)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -322,7 +420,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Harbor">Learn More</button>
+        <div class="modal fade" id="Harbor" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> E - High Tide (Wall)</p>
+                <p> Q - Cove (Smoke with armor)</p>
+                <p> C - Cascade (Moving wall)</p>
+                
+                <p> X - Reckoning (Stun Zone)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -334,8 +454,30 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jett">Learn More</button>
+        <div class="modal fade" id="jett" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Updraft (Dash up)</p>
+                <p> E - Tailwind (Dash to side)</p>
+                <p> C - Cloudburst (Smoke)</p>
+                <p> X - Blade storm (Throwable daggers)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
+    </li>
     </li>
     <li class="card">
       <div>
@@ -346,7 +488,28 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kayo">Learn More</button>
+        <div class="modal fade" id="kayo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Flash/Drive (Flash)</p>
+                <p> E - Zero/Point (Reveals enemy and disables abilities)</p>
+                <p> C - Frag/Ment (Grenade with 4 pulses)</p>
+                
+                <p> X - Null/Cmd (Disables enemy abilities)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
       </div>
     </li>
     <li class="card">
@@ -358,7 +521,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#killjoy">Learn More</button>
+        <div class="modal fade" id="killjoy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Alarmbot (Trap)</p>
+                <p> E -  Turret (Fires enemy in 180 degree cone.</p>
+                <p> C - Nanoswarm (Planted grenade)</p>
+                
+                <p> X - Lockdown (Detains all enemies in radius)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -370,7 +555,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#neon">Learn More</button>
+        <div class="modal fade" id="neon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Relay Bolt (Bouncing Stun)</p>
+                <p> E - High gear (Increase speed)</p>
+                <p> C - Fast Lane (Two surrounding walls)</p>
+                
+                <p> X - Overdrive (Charged deadly lighting with high movement accuracy)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -382,7 +589,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Omen">Learn More</button>
+        <div class="modal fade" id="Omen" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Paranoia (Reducing the vision range)</p>
+                <p> E - Dark Cover (Smoke)</p>
+                <p> C - Shrouded Step (Teleport)</p>
+                
+                <p> X - From The Shadows (Teleports to any spot on the map)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -394,7 +623,28 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#phoenix">Learn More</button>
+        <div class="modal fade" id="phoenix" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Curveball(Flash)</p>
+                <p> E - Hot Hands (Fire zone)</p>
+                <p> C - Blaze (Fire wall)</p>  
+                <p> X - Run It Back (Clones and teleports back to the ultimate spot)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -406,8 +656,31 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#raze">Learn More</button>
+        <div class="modal fade" id="raze" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Blast pack (Damage/Movement)</p>
+                <p> E - Paint Shells (Grenade)</p>
+                <p> C - Boom Bot (Locks on enemy and blows up)</p>
+                
+                <p> X - Showstopper (Rocket Launcher)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
+    </li>
     </li>
     <li class="card">
       <div>
@@ -418,7 +691,28 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reyna">Learn More</button>
+        <div class="modal fade" id="reyna" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Devour (Heal)</p>
+                <p> E - Dismiss (Become Intangible for a short duration)</p>
+                <p> C - Leer (Flash eye)</p>
+                <p> X - Empress (Increase rapid fire, Heal, Ghost)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -430,7 +724,28 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sage">Learn More</button>
+        <div class="modal fade" id="sage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Slow Orb (Slows enemies)</p>
+                <p> E - Healing Orb (Heals enemies or yourself)</p>
+                <p> C - Barrier Orb (Ice Wall)</p>
+                <p> X - Resurrection (Revives teammates)</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -442,7 +757,28 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#skye">Learn More</button>
+        <div class="modal fade" id="skye" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Trailblazer (Controllable dog for information)</p>
+                <p> E - Guiding Light (Controllable flash)</p>
+                <p> C - Regrowth (Heal Zone)</p>
+                <p> X - Seekers (Seeks enemies and blinds them)</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -454,7 +790,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sova">Learn More</button>
+        <div class="modal fade" id="sova" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Shock Bolt (Damage bolt)</p>
+                <p> E - Recon dart (Vision)</p>
+                <p> C - Owl Drone (Information)</p>
+                
+                <p> X - Hunter's Fury (Three deadly shots with far range that shoot in a straight line)</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -466,7 +824,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#viper">Learn More</button>
+        <div class="modal fade" id="viper" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Poison Cloud (Smoke(re-usable))</p>
+                <p> E - Toxic Screen (Wall(re-usable))</p>
+                <p> C - Snake Bite (Toxic grenade)</p>
+                
+                <p> X - Viper's Pit (Toxic zone , leaves enemy with 1 hitpoint.)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
     <li class="card">
@@ -478,7 +858,29 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button class="card link">Learn More</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Yoru">Learn More</button>
+        <div class="modal fade" id="Yoru" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> Q - Blindside (Flash)</p>
+                <p> E - Gatecrash (Teleport or Fake Teleport)</p>
+                <p> C - Fakeout (Fake Clone)</p>
+                
+                <p> X - Dimensional Drift (Become invisible and gather information and weapon)
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+</div>
+            </div>
+            </div>
+        </div>
+        
       </div>
     </li>
   </ul>

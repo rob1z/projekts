@@ -44,7 +44,7 @@
 
 }
 
-img{    height: 150px;
+img{    height: 200px;
     width: 200px;}
 
     .texttop{
