@@ -1,4 +1,4 @@
-@include('layouts.main')
+@include('layouts.mcheader')
 
 <!DOCTYPE html>
 <html lang="en">
