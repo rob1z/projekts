@@ -27,7 +27,11 @@
     display:flex;
     justify-content:center;
   }
-  
+  btn-primay{
+    color:grey;
+    
+  }
+
   :root {
     --red: #ef233c;
     --darkred: #c00424;
@@ -74,7 +78,11 @@
     max-width:100%;
   }
   
-  
+  .btn-primary{
+    background-color:grey;
+    color:grey;
+    border-color:grey;
+  }
   .card:hover {
     color: var(--white);
     background: var(--grey);

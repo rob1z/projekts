@@ -31,8 +31,8 @@ Route::get('/valorant', function () {
     return view('valorant');
 });
 
-Route::get('/minecraft', function () {
-    return view('minecraft');
+Route::get('/rocketleague', function () {
+    return view('rocketleague');
 });
 
 Route::get('/cspatch', function () {
