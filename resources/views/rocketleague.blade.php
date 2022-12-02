@@ -10,8 +10,7 @@
 </head>
 <style>
     body {
- background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTczqOGvHMqrFFNDAw0K9HL3vwQG16o_1qvA&usqp=CAU");
- background-color: #cccccc;
+ background-color: rgba(85, 84, 84, 0.5);
  background-repeat: no-repeat;
  background-size: 100%
 
@@ -42,6 +41,8 @@
 <div class="text">
     <div class="title">
 <h1>Rocket League</h1>
+
+<h4>under maintenance</h4>
     </div>
 
                 

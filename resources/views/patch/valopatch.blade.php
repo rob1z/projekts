@@ -9,6 +9,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>test</h1>
+<tbody>
+    
+    
+    <th scope="row">{{$agent->agent_id}}</th>
+
+    <td>{{$agent -> name}}</td>
+
+</tbody>
 </body>
 </html>

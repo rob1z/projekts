@@ -359,12 +359,12 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Cypher">Sentinel</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Cypher">Learn More</button>
         <div class="modal fade" id="Cypher" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Sentinel</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -462,12 +462,12 @@
         </div>
       </div>
       <div class="card-link-wrapper">
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jett">Dualist</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#jett">Learn More</button>
         <div class="modal fade" id="jett" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Abilities</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Dualist</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
