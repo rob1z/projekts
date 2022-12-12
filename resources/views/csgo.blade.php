@@ -6,16 +6,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
 <style>
-        body {
- background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR58NhbYHMMOPW_7pj6WpVd1B9RYnL_BvqUgQ&usqp=CAU");
- background-color: #cccccc;
- background-repeat: no-repeat;
- background-size: 100%
+*, *::before, *::after {
+    box-sizing:border-box;
+}
 
-}   
+body{
+  background-image: url("https://steamcdn-a.akamaihd.net/apps/csgo/blog/images/wallpaper_nologo.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+.carousel{
+    width:1000px;
+    height:600px;
+    position: relative; 
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel > ul{
+  margin:0;
+  padding:0;
+  list-style: none; 
+
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+.slide > img {
+    display:block;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+.carousel-button {
+    position:absolute;
+    z-index: 2;
+    background:none;
+    border:none;
+    font-size:4rem;
+    top:50%;
+    transform:translateY(-50%);
+    color: rgba(255,255,255,.5);
+    cursor: pointer;
+    border-radius:.25rem;
+    padding: 0 .5rem;
+    background-color:rgba(0, 0, 0, .1)
+}
+.carousel-button:hover,
+.carousel-button:focus{
+  color:white;
+  background-color:rgba(0, 0, 0, .2)
+}
+
+.carousel-button:focus{
+  outline: 1px solid black;
+}
+.slide[data-active] {
+    opacity: 1;
+    transition-delay:0;
+}
+
+.carousel-button.prev{
+  left:1rem;
+}
+.carousel-button.next{
+  right:1rem;
+}
+.carousel-content {
+  position:absolute;
+  background: rgba(0, 0, 0, 0.2);
+  text-align:center;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  width:100%;
+}
     .text {
         color:white;
         text-align:center;
@@ -25,7 +102,6 @@
         margin-bottom:50px;
     }
     .container{
-        background-color:black;
         background: rgba(0, 0, 0, 0.5);
         padding:100px;
         margin-top:75px;
@@ -36,11 +112,6 @@
 
     .button{
         text-align:center;
-    }
-    img{
-        padding-left:200px;
-        padding-right:200px;
-        justify-content:center;
     }
 
 </style>
@@ -63,34 +134,80 @@
        <p> in addition to community-hosted servers with custom maps and game modes. A battle-royale game-mode, "Danger Zone", was introduced in late 2018.</p>
     </div>
 </div>
-<div class="bd-example">
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=777&amp;fg=555&amp;text=First slide" alt="First slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_184c250dabd%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_184c250dabd%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.00000762939453%22%20y%3D%22217.99999885559083%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+<h1 style="color:white; text-align:center; font-size:60px; padding-bottom:20px">Active Duty Maps:</h1>
+<section aria-label="Newest Maps">
+  <div class="carousel" data-carousel>
+    <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+    <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+  <ul data-slides>
+    <li class="slide" data-active>
+      <div class="carousel-content">
+      <h1>Anubis</h1>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=666&amp;fg=444&amp;text=Second slide" alt="Second slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_184c250dabf%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_184c250dabf%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22245.9091033935547%22%20y%3D%22217.99999885559083%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+      <img src="https://cdn.akamai.steamstatic.com/apps/csgo/images/blog/anubis_map.jpg" alt="Map Image #1">
+    </li>
+    <li class="slide">
+      <div class="carousel-content">
+        <h1>Ancient</h1>
       </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" data-src="holder.js/800x400?auto=yes&amp;bg=555&amp;fg=333&amp;text=Third slide" alt="Third slide [800x400]" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_184c250dabf%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_184c250dabf%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22275.90909576416016%22%20y%3D%22217.99999885559083%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
-      </div>
+    <img src="https://cdn1.dotesports.com/wp-content/uploads/2021/05/03174829/ancient.jpg" alt="Map Image #2">
+  </li>
+  <li class="slide">
+    <div class="carousel-content">
+      <h1>Inferno</h1>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  <img src="https://cdn.akamai.steamstatic.com/apps/csgo/images/inferno/beautyshot.jpg" alt="Map Image #3">
+</li>
+<li class="slide">
+  <div class="carousel-content">
+    <h1>Mirage</h1>
   </div>
-  </div>
+<img src="https://cdn1.dotesports.com/wp-content/uploads/2018/08/11092438/518dab97-9d71-4a88-aef1-75cc4d60ec76.jpg" alt="Map Image #4">
+</li>
+    <li class="slide">
+        <div class="carousel-content">
+        <h1>Nuke</h1>
+        </div>
+      <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2018/02/12/874f5eb9-cb62-431e-aca7-49c5b430d8b6/csgo-nuke-rework" alt="Map Image #5">
+    </li>
+    <li class="slide">
+      <div class="carousel-content">
+        <h1>Overpass</h1>
+        </div>
+      <img src="https://cdn.mos.cms.futurecdn.net/89b974cb4ebabbf368ecc0574308e20f.jpg" alt="Map Image #6">
+    </li>
+    <li class="slide">
+      <div class="carousel-content">
+        <h1>Vertigo</h1>
+        </div>
+      <img src="https://pbs.twimg.com/media/D3J8GQ3XQAE0eyA.jpg" alt="Map Image #7">
+    </li>
+  </ul>
+</div>
+</section>
+
 </body>
 @include("layouts.footer")
 </html>
+
+<script>
+  const buttons = document.querySelectorAll("[data-carousel-button]")
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      const offset = button.dataset.carouselButton === "next" ? 1 : -1
+      const slides = button
+      .closest("[data-carousel]")
+      .querySelector("[data-slides]")
+
+      const activeSlide = slides.querySelector("[data-active]")
+      let newIndex = [...slides.children].indexOf(activeSlide) + offset
+      if (newIndex < 0) newIndex = slides.children.length -1
+      if (newIndex >= slides.children.length) newIndex = 0
+
+      slides.children[newIndex].dataset.active = true
+      delete activeSlide.dataset.active
+    })
+  })
+
+  </script>
