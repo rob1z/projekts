@@ -205,6 +205,8 @@
       <p> the game began a closed beta period with limited access on April 7, 2020, followed by a release on June 2, 2020.</p>
       <p>  The development of the game started in 2014. Valorant takes inspiration from the Counter-Strike series of tactical shooters, </p>
       <p>  borrowing several mechanics such as the buy menu, spray patterns, and inaccuracy while moving.</p>
+      <h1 style="center"> What is VALORANT? </h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/IEN1sWst-RU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
   

@@ -132,7 +132,10 @@ body{
        <p>   There are nine official game modes, all of which have distinct characteristics specific to that mode.</p>
        <p>    The game also has matchmaking support that allows players to play on dedicated Valve servers, </p>
        <p> in addition to community-hosted servers with custom maps and game modes. A battle-royale game-mode, "Danger Zone", was introduced in late 2018.</p>
-    </div>
+        <h1 style="text-align:center">What is CS:GO? [Animated]</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RIZWzT_RL6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
 </div>
 <h1 style="color:white; text-align:center; font-size:60px; padding-bottom:20px">Active Duty Maps:</h1>
 <section aria-label="Newest Maps">
